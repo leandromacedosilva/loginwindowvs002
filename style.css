@@ -8,11 +8,19 @@
   list-style: none;
 }
 
-
 body {
   font-family: "Sora", sans-serif;
+  background: url("https://images.unsplash.com/photo-1733959136134-4aff9c694857?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background: url("https://images.unsplash.com/photo-1731367203762-8745110e7eb5?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://plus.unsplash.com/premium_photo-1725408115671-b67df9364179?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://images.unsplash.com/photo-1721332155545-c7a8005a2581?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://images.unsplash.com/photo-1732740674539-74d1f760acfa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://plus.unsplash.com/premium_photo-1733230680627-c091ab9e3065?q=80&w=1375&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://images.unsplash.com/photo-1733592688551-5ba7804a9634?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://images.unsplash.com/photo-1731432248469-8e16b091c7d2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  /* background: url("https://images.unsplash.com/photo-1734375119887-460f4b97dfaa?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   /* background: url("https://source.unsplash.com/1600x900/?landscape"); */
-  background-image: linear-gradient(to right, #476c7a, #444649);
+  /* background-image: linear-gradient(to right, #c9a69b, #357ae0); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -24,7 +32,8 @@ body {
 .container {
   width: 420px;
   background: transparent;
-  border: 2px solid #9b9b9b;
+  /* border: 2px solid #9b9b9b; */
+  border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   border-radius: 10px;
   padding: 30px 40px;
@@ -36,4 +45,87 @@ h1 {
   color: #ffffff;
 }
 
-.input-container {}
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-container input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-container input::placeholder {
+  color: #ffffff;
+}
+
+.input-container img {
+  position: absolute;
+  right: 24px;
+  top: 20%;
+  margin-top: 5px;
+}
+
+.input-container a {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.input-container a:hover {
+  text-decoration: underline;
+}
+
+.link-anc {
+  margin-top: 6px;
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+  background: #5100b5;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 24px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: 0.9s;
+}
+
+.submit-button:hover {
+  background: #6e16da;
+}
+
+.register-link p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.register-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.register-link p a {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
